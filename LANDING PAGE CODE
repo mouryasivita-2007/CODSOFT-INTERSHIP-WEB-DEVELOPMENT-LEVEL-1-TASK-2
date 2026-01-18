@@ -1,0 +1,448 @@
+**THIS LANDING PAGE CONTAIN 3 HTML FILE NAMELY INDEX.HTML , ABOUTUS.HTML , CONTACTUS.HTML AND A MAIN STYLE.CSS**
+
+**INDEX.HTML**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANDING PAGE</title>
+</head>
+
+
+
+<body>
+    <header class="header">
+        <img src="logo.jpeg" id="logo" alt="Logo">
+        <h1 id="heading">SIVI WEBDESIGNER</h1>
+        <div id="nav-buttons">
+            <a href="aboutUs.html" target="_blank"><button>ABOUT US</button></a>
+            <a href="contactUs.html" target="_blank"><button>CONTACT US</button></a>
+        </div>
+    </header>
+
+    <!-- Hero Section: Image Left, Tagline Right -->
+    <section class="hero-section">
+        
+            <img src ="img1.jpg" id="img1" alt="Hero Image" class="hero-left">
+        </div>
+        <div class="hero-right">
+            <h2>ONE STOP SOLUTION FOR ALL YOUR WEB DESIGNING PROBLEM BECAUSEE WE ARE THERE !!!.</h2>
+        </div>
+    </section>
+
+    <!-- About Service -->
+    <section class="about-service">
+        <h2>ABOUT SERVICE :- </h2>
+        <p id="p101">  We specialize in creating stunning websites tailored to your business needs.</p>
+    </section>
+
+    <!-- Service + Why Choose + CTA Left, Image Right -->
+    <section class="content-section">
+        <div class="content-right">
+            <div class="services">
+                <h2>SERVICE OFFERED :- </h2>
+                <ul>
+                    <li>Portfolio websites</li>
+                    <li>Business websites</li>
+                    <li>Landing Pages, E-commerce setup</li>
+                </ul>
+            </div>
+            <div class="why-choose">
+                <h2>WHY CHOOSE US :-</h2>
+                <ul>
+                    <li>Fast delivery</li>
+                    <li>Affordable pricing</li>
+                    <li>Professional UI/UX</li>
+                </ul>
+            </div>
+            <div class="cta">
+                <h2>CALL TO ACTION :-</h2>
+                <a href="aboutUs.html" id="button">Get Started</a>
+            </div>
+        </div>
+        <div class="content-right">
+            <img src="commerce.avif" id="img2" alt="Service Image">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 SIVI WEBDESIGNER. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+
+**ABOUTUS.HTML**
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Web Designer</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        .about-us {
+            max-width: 1200px;
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+            padding: 20px;
+        }
+
+        .about-text {
+            flex: 1 1 500px;
+        }
+
+        .about-text h2 {
+            color: #307bcc;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .about-text p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .about-text ul {
+            list-style: none;
+        }
+
+        .about-text ul li {
+            background-color: #e3f2fd;
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 8px;
+            color: #307bcc;
+            font-weight: bold;
+        }
+
+        .about-image {
+            flex: 1 1 400px;
+            text-align: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .about-us {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-text ul li {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="about-us">
+        <div class="about-text">
+            <h2>About SIVI WEB DESIGNER</h2>
+            <p>At SIVI, we craft modern, responsive, and visually stunning websites that help businesses grow online. Our team is passionate about clean code, innovative design, and user-friendly experiences. We turn ideas into digital realities.</p>
+            <ul>
+                <li>Web Design</li>
+                <li>UI/UX Design</li>
+                <li>Responsive Development</li>
+                <li>Branding & Identity</li>
+            </ul>
+        </div>
+        <div class="about-image">
+            <img src="web-designer-team.jpg" alt="Web Design Team">
+        </div>
+    </section>
+
+</body>
+</html>
+
+**CONTACTUS**
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Web Designer</title>
+    <style>
+        /* Reset & base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        .contact-us {
+            max-width: 1200px;
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 20px;
+        }
+
+        .contact-text, .contact-form {
+            flex: 1 1 500px;
+        }
+
+        .contact-text h2 {
+            color: #307bcc;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .contact-text p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .contact-text ul {
+            list-style: none;
+        }
+
+        .contact-text ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            padding: 12px;
+            background-color: #307bcc;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #1f5fa5;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .contact-us {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="contact-us">
+        <!-- Contact info -->
+        <div class="contact-text">
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you! Whether you have a project in mind or just want to say hi, reach out to us using the form aside or through our contact details.</p>
+            <ul>
+                <li><strong>Email:</strong> info@siviwebdesigner.com</li>
+                <li><strong>Phone:</strong> +91 9256230356</li>
+                <li><strong>Address:</strong> Romeo  Web Street, Tech City,Bangalore, India</li>
+            </ul>
+        </div>
+
+        <!-- Contact form -->
+        <div class="contact-form">
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
+
+**STYLE.CSS**
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:rgba(190, 247, 247.0.5);
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0b4b4;
+
+    border-bottom: 3px solid #333;
+}
+
+#logo {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+
+#heading {
+    font-size: 28px;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+#nav-buttons button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: rgb(235, 101, 128);
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    padding-top: 2%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero-left{
+    width: 250px;
+    height: 250px;
+    border-radius: 30%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.hero-left img:hover {
+    transform: scale(1.05);
+}
+
+.hero-right h2 {
+    font-size: 24px;
+    max-width: 400px;
+}
+
+/* About Service */
+.about-service {
+   
+    display: flex;
+    align-self: flex-end;
+
+}
+#p101{
+    display: flex;
+    align-self: center;
+    margin-right: 2px;
+}
+
+/* Content Section */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.content-left {
+    flex: 1;
+   
+}
+.services{
+    display: flex;
+    align-self: flex-end;
+}
+
+.why-choose{
+    display: flex;
+    align-self: flex-end;
+}
+
+.content-right img {
+    width: 250px;
+    height: 250px;
+    border-radius: 30%;
+    box-shadow: 0 8px 20px rgba(30, 5, 5, 0.3);
+    transition: transform 0.3s;
+}
+
+.content-right img:hover {
+    transform: scale(1.05);
+}
+
+
+
+.services ul, .why-choose ul {
+    list-style-type: disc;
+
+}
+
+.cta{
+    display: flex;
+    align-self: center;
+    font-size: 16px;
+    cursor: pointer;
+
+    
+}
+#button{
+    color:#333;
+    margin-top: 25px;
+    margin-right: 15px;
+    height: 20px;
+    width: 100px;
+    border-radius: 30%;
+    background-color: rgba(232, 11, 44, 0.5);
+}
+
+/* Footer */
+footer {
+    height: 30px;
+    width: 100%;
+    background-color:rgb(243, 200, 207);
+    color:black;
+    text-align: center;
+    border-bottom: 3.5px solid black;
+}
+
+
